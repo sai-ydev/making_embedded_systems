@@ -5,7 +5,7 @@ InterruptIn button(PC_13);
 // Ref: https://os.mbed.com/media/uploads/robt/mbed_course_notes_-_timers_and_interrupts.pdf
 Timer debounce;
 
-int flip = 0;
+volatile int flip = 0;
 
 void interrupt_call()
 {
